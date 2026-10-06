@@ -4,6 +4,10 @@ A deterministic architectural demonstration of weak-signal triage and promotion 
 
 **Stephen A. Putman / PUTMAN · v0.1**
 
+Live demo: https://putmanmodel.github.io/weak-signal-lab/
+
+This URL will work only after GitHub Pages is enabled and the site is published. Preparing these files does not enable or publish GitHub Pages.
+
 Core idea:
 
 **Weak evidence may increase attention before it earns stronger consequence or authority.**
@@ -83,7 +87,9 @@ npm test
 npm run check
 ```
 
-This is a **buildless static application**: `dist/` already contains the complete browser-ready files. There is no compilation or `npm run build` step. `server.mjs` is a local preview convenience, not an application backend. No publishing or deployment system is included.
+This is a **buildless static application**: the root `index.html` is the single HTML entrypoint, and `dist/` contains its browser-ready scripts and stylesheet. There is no compilation or `npm run build` step. `server.mjs` serves the same repository-root layout for local preview; it has no required server-side application logic.
+
+For a future GitHub Pages project site, use the repository root as the publishing directory. Keep `index.html` and `dist/` together. Entry assets use `./dist/` paths, and JavaScript modules use relative imports, so the app also works under `/weak-signal-lab/`. GitHub Pages does not run `server.mjs`. No framework, deployment dependency, or GitHub Action is needed or included.
 
 To try the lab, choose an experiment and advance one event at a time. In Motor stress, watch concern rise while authority stays unchanged, then inspect the human-review package. In Echo Trap, event 6 shows three active support paths but only one independent source; event 7 supplies the independent temperature finding. Alternate-branch controls let you explore evidence loss, contradiction, and expiry. Reset restores the guided replay.
 

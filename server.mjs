@@ -2,7 +2,7 @@ import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-const root = fileURLToPath(new URL('./dist/', import.meta.url));
+const root = fileURLToPath(new URL('./', import.meta.url));
 const port = Number(process.env.PORT || 5173);
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml' };
 http.createServer(async (req, res) => {
