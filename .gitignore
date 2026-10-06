@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Vite / local tooling cache
+.vite/
+.cache/
+
+# Test / coverage output
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Local-only overrides
+*.local

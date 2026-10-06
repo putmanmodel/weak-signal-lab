@@ -1,0 +1,17 @@
+{
+  "name": "putman-weak-signal-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A deterministic promotion-control and weak-signal triage demonstration by Stephen A. Putman / PUTMAN.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check dist/engine.js && node --check dist/scenarios.js && node --check dist/app.js && node --check dist/presentation.js"
+  },
+  "author": "Stephen A. Putman / PUTMAN <putmanmodel@pm.me>",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  }
+}
